@@ -1,5 +1,6 @@
 //import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:psus_foundation/screens/Activities.dart';
 import 'package:psus_foundation/screens/LandingPage.dart';
 import 'package:psus_foundation/screens/Registrarion.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Transparent Login App',
       //home: LandingPage(),
-      home: Registration(),
+      //home: Registration(),
+      home: Activities(),
       theme: ThemeData(
         fontFamily: 'Noto Serif Bengali',
         textTheme: TextTheme(
