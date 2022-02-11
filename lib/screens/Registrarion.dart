@@ -69,7 +69,7 @@ class Registration extends StatelessWidget {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: "নিবন্ধনের বিষয় ",
-                      hintStyle: TextStyle(fontSize: 18.0),
+                      hintStyle: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0)),
                     ),
                   ),
                 ),
@@ -84,7 +84,7 @@ class Registration extends StatelessWidget {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: " নাম ",
-                      hintStyle: TextStyle(fontSize: 18.0,fontFamily: 'GoogleFonts.notoSerifBengali()' ),
+                      hintStyle: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0)),
                     ),
                   ),
                 ),
@@ -99,7 +99,7 @@ class Registration extends StatelessWidget {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: "প্রতিষ্ঠানের নাম ",
-                      hintStyle: TextStyle(fontSize: 18.0),
+                      hintStyle: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0)),
                     ),
                   ),
                 ),
@@ -114,7 +114,7 @@ class Registration extends StatelessWidget {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: "ঠিকানা ",
-                      hintStyle: TextStyle(fontSize: 18.0),
+                      hintStyle: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0)),
                     ),
                   ),
                 ),
@@ -129,7 +129,7 @@ class Registration extends StatelessWidget {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: "ই-মেইল",
-                      hintStyle: TextStyle(fontSize: 18.0),
+                      hintStyle: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0)),
                     ),
                   ),
                 ),
@@ -144,7 +144,7 @@ class Registration extends StatelessWidget {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: "মোবাইল নাম্বার ",
-                      hintStyle: TextStyle(fontSize: 18.0),
+                      hintStyle: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0)),
                     ),
                   ),
                 ),
@@ -159,19 +159,20 @@ class Registration extends StatelessWidget {
                       Text(
                         "পূর্ববর্তী অ্যাকাউন্ট থাকলে ",
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 18.0),
+                        style: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0)),
                       ),
                       TextButton(
                           child: Text(
                             "লগইন",
-                            style:
-                                TextStyle(fontSize: 18.0, color: Colors.green),
+                            style: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0,color: Colors.green),),
+
+                                //TextStyle(fontSize: 18.0, color: Colors.green),
                           ),
                           onPressed: () {}),
                       Text(
                         "করুন",
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 18.0),
+                        style: GoogleFonts.notoSerifBengali(textStyle: TextStyle(fontSize: 18.0),),
                       ),
                     ],
                   ),
