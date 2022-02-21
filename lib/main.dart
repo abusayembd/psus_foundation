@@ -4,6 +4,8 @@ import 'package:psus_foundation/screens/Activities.dart';
 import 'package:psus_foundation/screens/LandingPage.dart';
 import 'package:psus_foundation/screens/Registrarion.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:psus_foundation/screens/SliverTest.dart';
+import 'package:psus_foundation/screens/SliverTestTwo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +22,9 @@ class MyApp extends StatelessWidget {
       title: 'Transparent Login App',
       //home: LandingPage(),
       //home: Registration(),
-      home: Activities(),
+      //home: Activities(),
+      //home: SliverProblem(),
+      home: SliverTestTwo(),
       theme: ThemeData(
         fontFamily: 'Noto Serif Bengali',
         textTheme: TextTheme(
