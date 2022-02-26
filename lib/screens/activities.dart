@@ -5,15 +5,20 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:psus_foundation/screens/Registrarion.dart';
 
-class Activities extends StatelessWidget {
+class Activities extends StatefulWidget {
+  Activities({Key? key}) : super(key: key);
+
+  @override
+  State<Activities> createState() => _ActivitiesState();
+}
+
+class _ActivitiesState extends State<Activities> {
   final List<String> list_A = [
     "Donar's List",
     "NGOs",
     "Transporters List",
     "volunteers"
   ];
-
-  Activities({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -217,11 +222,14 @@ class Activities extends StatelessWidget {
               children: [
                 Container(
                   color: Colors.white,
-                  child: Text(
-                    "Newsfeed",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 20, 119, 23)),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                    child: Text(
+                      "Newsfeed",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 20, 119, 23)),
+                    ),
                   ),
                 ),
                 NewsCard(),
@@ -277,13 +285,57 @@ class Activities extends StatelessWidget {
             ),
           ),
           // SliverToBoxAdapter(
-          //   child: Padding(
-          //     padding: const EdgeInsets.only(top: 38.0),
-          //     child: Container(
-          //         color: Colors.white, height: 30.0, child: Bottom_Icon()),
+          //   child: Container(
+          //     height: 500.0,
+          //     width: double.infinity,
+          //     color: Colors.green,
           //   ),
-          // ai khane tab bar use kora lagbe
           // ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavBar(),
+    );
+  }
+}
+
+class BottomNavBar extends StatelessWidget {
+  const BottomNavBar({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.only(right: 60.0, left: 60.0),
+      child: BottomNavigationBar(
+        selectedItemColor: Color.fromARGB(255, 10, 94, 13),
+        unselectedItemColor: Color.fromARGB(255, 10, 98, 13),
+        type: BottomNavigationBarType.fixed,
+        showSelectedLabels: false,
+        unselectedFontSize: 0,
+        selectedFontSize: 0,
+        elevation: 0,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle_outlined),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.timer),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "",
+          ),
         ],
       ),
     );
@@ -314,8 +366,8 @@ class NewsCard extends StatelessWidget {
           Expanded(
             flex: 2,
             child: Container(
-              color: Colors.white,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "দেশ জুড়ে চলছে বৃক্ষরোপন কর্মসুচী",

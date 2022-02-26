@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:psus_foundation/screens/Activities.dart';
 
 class Registration extends StatelessWidget {
   const Registration({
@@ -190,57 +191,11 @@ class Registration extends StatelessWidget {
                 ),
               ),
             ),
-            Bottom_Icon()
+            //Bottom_Icon()
           ],
         ),
       ),
-    );
-  }
-}
-
-class Bottom_Icon extends StatelessWidget {
-  const Bottom_Icon({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        height: 220.0,
-        width: double.infinity,
-        //color: Colors.green,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            Icon(
-              Icons.home,
-              color: Color.fromARGB(255, 8, 80, 10),
-            ),
-            Padding(padding: EdgeInsets.only(right: 40.0)),
-            Icon(
-              Icons.account_circle_outlined,
-              color: Color.fromARGB(255, 8, 80, 10),
-            ),
-            Padding(padding: EdgeInsets.only(right: 40.0)),
-            Icon(
-              Icons.timer,
-              color: Color.fromARGB(255, 8, 80, 10),
-            ),
-            Padding(padding: EdgeInsets.only(right: 40.0)),
-            Icon(
-              Icons.notifications,
-              color: Color.fromARGB(255, 8, 80, 10),
-            ),
-            Padding(padding: EdgeInsets.only(right: 40.0)),
-            Icon(
-              Icons.settings,
-              color: Color.fromARGB(255, 8, 80, 10),
-            ),
-          ],
-        ),
-      ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }
