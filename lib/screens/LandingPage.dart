@@ -47,7 +47,7 @@ class LandingPage extends StatelessWidget {
 Widget _logo() {
   return Center(
     child: SizedBox(
-      child: Image.network("https://uilogos.co/img/logomark/kyan.png"),
+      child: Image.asset("assets/images/tree_logo.png"),
       height: 100.0,
     ),
   );
