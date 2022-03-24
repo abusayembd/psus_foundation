@@ -1,9 +1,7 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, non_constant_identifier_names
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, non_constant_identifier_names, prefer_const_constructors_in_immutables
 
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:psus_foundation/screens/Registrarion.dart';
 
 class Activities extends StatefulWidget {
   Activities({Key? key}) : super(key: key);
@@ -26,6 +24,14 @@ class _ActivitiesState extends State<Activities> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            actions: [
+              IconButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/Cart');
+                },
+                icon: Icon(Icons.arrow_forward),
+              ),
+            ],
             backgroundColor: Color.fromARGB(255, 9, 104, 12),
             title: Center(
               child: Text("Home"),

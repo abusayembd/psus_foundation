@@ -2,13 +2,12 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:psus_foundation/screens/Activities.dart';
+import 'package:psus_foundation/route_geerator.dart';
 import 'package:psus_foundation/screens/Activities.dart';
 import 'package:psus_foundation/screens/LandingPage.dart';
 import 'package:psus_foundation/screens/Registrarion.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:psus_foundation/screens/cart.dart';
-import 'package:psus_foundation/screens/test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,11 +22,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Transparent Login App',
-      //home: LandingPage(),
+
+      initialRoute: '/',
+      onGenerateRoute: RouteGenerator.generateRoute,
       //home: Registration(),
       //home: Activities(),
       //home: Cart(),
-      home: Drop(),
 
       theme: ThemeData(
         fontFamily: 'Noto Serif Bengali',

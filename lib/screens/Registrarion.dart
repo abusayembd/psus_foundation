@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:psus_foundation/screens/Activities.dart';
 
@@ -23,6 +22,14 @@ class Registration extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Center(child: Text("Home")),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/Activities');
+            },
+            icon: Icon(Icons.arrow_forward),
+          ),
+        ],
       ),
       backgroundColor: Colors.white,
       body: Padding(

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -31,6 +33,19 @@ class LandingPage extends StatelessWidget {
                           height: 70.0,
                         ),
                         _speech(),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 220.0),
+                          child: Container(
+                            alignment: Alignment.bottomCenter,
+                            child: IconButton(
+                              onPressed: () {
+                                Navigator.of(context)
+                                    .pushNamed('/Registration');
+                              },
+                              icon: Icon(Icons.arrow_forward),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),

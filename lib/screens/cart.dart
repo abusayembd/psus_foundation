@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -16,66 +16,123 @@ class Cart extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.white,
                 margin: EdgeInsets.only(left: 5.0, top: 50.0, right: 5.0),
                 child: _logo(),
               ),
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.only(left: 5.0, top: 10.0, right: 5.0),
                 child: Column(
                   children: [
                     Expanded(
-                      child: Text("Which kind of tree you need?"),
+                      child: Text(
+                        "আপনার কি ধরনের গাছ প্রয়োজন ?",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 ),
               ),
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.only(left: 5.0, top: 10.0, right: 5.0),
-                child: Text("Container 3"),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        "প্রয়োজনীয় গাছের সংখ্যা কতটি ?",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.only(left: 5.0, top: 10.0, right: 5.0),
-                child: Text("Container 4"),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        "আপনি কি কোন এনজিও ?",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.only(left: 5.0, top: 10.0, right: 5.0),
-                child: Text("Container 5"),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        "আপনার পেশা ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.only(left: 5.0, top: 10.0, right: 5.0),
-                child: Text("Container 6"),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        "আপনার নাম ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.only(left: 5.0, top: 10.0, right: 5.0),
-                child: Text("Container 7"),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        " গাছ ডেলিভারীর ঠিকানা ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                height: 90.0,
+                height: 80.0,
                 width: 400.0,
                 color: Colors.lightBlueAccent,
                 margin: EdgeInsets.only(left: 5.0, top: 10.0, right: 5.0),
-                child: Text("Container 8"),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        "যোগাযোগের নাম্বার ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
